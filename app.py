@@ -70,7 +70,7 @@ def admin_categories():
 
 @app.route('/admin/products')
 def admin_products():
-    return render_template("admin/product.html", product=product)
+    return render_template("admin/product.html")
 
 @app.route('/admin/create/category', methods=('GET', 'POST'))
 def create_category():
