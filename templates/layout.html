@@ -1,4 +1,4 @@
-<!-- TODO -->
+{% include 'partials/header.html' %}
 
 <div class="container">
   <div class="columns is-mobile is-centered">
@@ -36,10 +36,10 @@
           </div>
         </div>
       </nav>
-      <!-- TODO -->
-
+      {% block content %}
+      {% endblock %}
     </div>
   </div>
 </div>
 
-<!-- TODO -->
+{% include 'partials/footer.html' %}

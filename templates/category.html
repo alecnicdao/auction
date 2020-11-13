@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="is-size-1">{{ category.title }}</div>
+    <div class="is-size-3">{{ category.subtitle }}</div>
+
+    <ul>
+        {% for product in products %}
+            <li><a href="{{ url_for('product', category=category.name, id=product.id) }}">{{ product.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
